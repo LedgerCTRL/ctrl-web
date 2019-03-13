@@ -113,7 +113,7 @@ class App extends Component {
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">Turnkey Account Management</h5>
-                  <p className="card-text" >Managing users sucks, so we do it for you. Leverage native account management for the quickest prototypes.</p>
+                  <p className="card-text" >Managing users yourself sucks. Leverage native account management for the quickest prototypes.</p>
                   <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
@@ -169,7 +169,7 @@ class App extends Component {
           </div>
           <div className="row">
             <div className="col-sm-3"></div>
-            <div className="col-sm-6">
+            <div className="col-sm-6" style={{marginTop: -40}}>
               <div className="panel-group bg-dark">
                 <div className="panel panel-default text-light align-items-left">
                   <code className="panel-body">git clone https://github.com/ledgerctrl/ctrl-api-python</code>
@@ -185,6 +185,10 @@ class App extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="row" style={{marginTop: 40}}>
+            <div className="col-sm-3"></div>
+            < div className = "col-sm-6" > We need help. If you 'd like to contribute, email us: <a href="mailto:brock@ledgerctrl.com">brock@ledgerctrl.com</a></div>
           </div>
         </div>
         <footer style={{background: "#6666"}}>
