@@ -87,7 +87,7 @@ class App extends Component {
             </ul>
             </div>
           </div>
-          <h2>Reasons to use blockchain:</h2>
+          <h2>Reasons to use a blockchain:</h2>
           <div className="row">
             <div className="col-sm">
               <div className="card">
@@ -107,7 +107,7 @@ class App extends Component {
                   <img src="/img/browser.svg" style={cardImgStyle} className="card-img-top" alt="..." />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Very Permanent</h5>
+                  <h5 className="card-title">Most Permanent</h5>
                   < p className="card-text" >Blockchains don't rely on any company or owner to operate. As long as at least one server partakes, the blockchain remains online.</p>
                   <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
@@ -126,7 +126,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <h2>Reasons to use LedgerCTRL:</h2>
+          <h2 style={{ marginTop: "40px" }}>Reasons to use LedgerCTRL:</h2>
           <div className="row">
             <div className="col-sm">
               <div className="card">

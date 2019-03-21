@@ -4,8 +4,8 @@
 
 .App-logo {
   animation: App-logo-spin infinite 8.854ms linear;
-  opacity: 0.2;
-  height: 120vmin;
+  opacity: 0.1;
+  height: 160vmin;
   pointer-events: none;
   position: fixed;
   margin-bottom: 60px;
@@ -42,4 +42,8 @@
 
 .row {
   background: #fff;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
