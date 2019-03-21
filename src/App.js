@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { blockParams } from 'handlebars';
 
 const logo = "/img/logo.png"
 const cardImgStyle = {
@@ -19,7 +20,7 @@ class App extends Component {
     this.state = {
       cycleSelection: 0,
     }
-    this.cycleLength = 2400; // ms
+    this.cycleLength = 2100; // ms
     this.selections = [
       'supply chain analytics', 
       'non-fungible tokens',
@@ -46,7 +47,7 @@ class App extends Component {
         <div className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
           
           <a className="navbar-brand" href="/">LedgerCTRL</a>
-          <div className="navbar-text">blockchain made easy.</div>
+          <div className="navbar-text">liberating permitivitty of free space in blockchain</div>
           <div className="navbar-nav">
             <a className="nav-item nav-link active" href="#">Home</a>
             <a className="nav-item nav-link" href="#">Other</a>
@@ -54,17 +55,21 @@ class App extends Component {
         </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <h2>LedgerCTRL is...</h2>
           <p>
             The easiest way to build <code>{this.selections[this.state.cycleSelection]}</code> on blockchain.
           </p>
         </header>
         <div className="container">
           <div className="row" style={impactStyle}>
-            <div className="col-sm-3"></div>
-            <div className="col-sm-6 ul" style={{marginTop: -69}}>
+            <div className="col col-sm-3"></div>
+            <div className="col col-sm-6" style={{textAlign:"left"}}>
+              <ul style={{alignContent: "left", alignItems: "left", paddingLeft: "0pt", marginTop: -69}}>
               <h3>Why LedgerCTRL?</h3>
+              <li>Time is money</li>
               <li>
-                Building blockchain apps has historically been a pain in the ass.
+                Building blockchain apps has historically been difficult and cumbersome. 
+                <br />Almost as difficult as CSS.
               </li>
               <li>
                 Running servers and managing accounts is tedious and boring.
@@ -76,11 +81,13 @@ class App extends Component {
               <br />
               <div>
                 <em>
-                  Time is money, and this shit saves a lot of time.
+                  And most importantly, LedgerCTRL saves a lot of time.
                 </em>
               </div>
+            </ul>
             </div>
           </div>
+          <h2>Reasons to use blockchain:</h2>
           <div className="row">
             <div className="col-sm">
               <div className="card">
@@ -89,7 +96,7 @@ class App extends Component {
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">Natively Traceable</h5>
-                  <p className="card-text" >Build history into your application's data entries effortlessly. All CTRL entries have a permanent record on-chain.</p>
+                  <p className="card-text" >History is automatically built into all blockchain entries, which by design have a permanent record, timestamp, and order on-chain.</p>
                   <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
@@ -100,8 +107,47 @@ class App extends Component {
                   <img src="/img/browser.svg" style={cardImgStyle} className="card-img-top" alt="..." />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Soothingly Familiar</h5>
-                  < p className="card-text" >Forget about SQL and data hierarchies. Interact with your data using CRUD: Create, Read, Update, and Delete.</p>
+                  <h5 className="card-title">Very Permanent</h5>
+                  < p className="card-text" >Blockchains don't rely on any company or owner to operate. As long as at least one server partakes, the blockchain remains online.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm">
+              <div className="card">
+                <div className="center">
+                  <img src="/img/email.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">Security and Reliability</h5>
+                  <p className="card-text" >By utilizing various encryption techniques, data stored on the blockchain can be made unreadable by anyone but the owner.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Reasons to use LedgerCTRL:</h2>
+          <div className="row">
+            <div className="col-sm">
+              <div className="card">
+                <div className="center">
+                  <img src="/img/admin.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">Simple Smartness</h5>
+                  <p className="card-text" >We have a library of ready-to-go smart contracts that make use of the most widely ued tasks in blockchain.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm">
+              <div className="card">
+                <div className="center">
+                  <img src="/img/browser.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">Refreshingly Simple</h5>
+                  < p className="card-text" >Interact with your data using CRUD: Create, Read, Update, and Delete. Simple enough for prototypes, strong enough for production.</p>
                   <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
               </div>

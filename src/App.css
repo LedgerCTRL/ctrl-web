@@ -3,10 +3,12 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 20vmin;
+  animation: App-logo-spin infinite 8.854ms linear;
+  opacity: 0.2;
+  height: 120vmin;
   pointer-events: none;
-  margin-bottom: 30px;
+  position: fixed;
+  margin-bottom: 60px;
 }
 
 .App-header {
@@ -36,4 +38,8 @@
 .container {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.row {
+  background: #fff;
 }
