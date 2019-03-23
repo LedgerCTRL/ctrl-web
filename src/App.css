@@ -22,6 +22,10 @@
   color: white;
 }
 
+.header-logo {
+  width: 5%;
+}
+
 .App-link {
   color: #61dafb;
 }
