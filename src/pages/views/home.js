@@ -55,7 +55,7 @@ export default class Home extends Component {
                 <div className="col col-sm-6" style={{textAlign:"left"}}>
                     <ul style={{alignContent: "left", alignItems: "left", paddingLeft: "0pt", marginTop: -69}}>
                         <h3>Why LedgerCTRL?</h3>
-                        <li>Time is money</li>
+                        <li>Time is money.</li>
                         <li>
                         Building blockchain apps has historically been difficult and cumbersome. 
                         <br />Almost as difficult as CSS.
@@ -111,10 +111,10 @@ export default class Home extends Component {
                 </div>
                 </div>
                 <div className="row">
-                <div className="col-sm" style={impactStyle}>
-                    <h3>Client Libraries</h3>
-                    <h5>(coming soon...)</h5>
-                </div>
+                    <div className="col-sm" style={impactStyle}>
+                        <h3>Client Libraries</h3>
+                        <h5>(coming soon...)</h5>
+                    </div>
                 </div>
                 <div className="row">
                 <div className="col-sm card">

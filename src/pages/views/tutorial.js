@@ -19,18 +19,25 @@ export default class Tutorial extends Component {
                 <span>This page will give you the rundown on how to build a blockchain-enabled app with LedgerCTRL.</span>
                 <Steps>
                     <Step num={1}>
-                        {["do thing 1", 
-                        "do-thing -1"]}
+                        {[
+                            "Deploy an Itembase contract",
+                            "POST /itembase"
+                        ]}
                     </Step>
                     <Step num={2}>
-                        {["do thing 2", 
-                        "do-thing -2"]}
+                        {[
+                            "Create an item",
+                            "POST /item"
+                        ]}
                     </Step>
                     <Step num={3}>
-                        {["do thing 3", 
-                        "do-thing -3"]}
+                        {[
+                            "Check out your data",
+                            "GET /item"
+                        ]}
                     </Step>
                 </Steps>
+                <h6>Our software is not yet complete... Please help us build it! Contact Brock, our CTO, at <a href="mailto:brock@ledgerctrl.com">brock@ledgerctrl.com</a></h6>
             </div>
         )
     }
