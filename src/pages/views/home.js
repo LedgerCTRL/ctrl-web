@@ -54,30 +54,24 @@ export default class Home extends Component {
                 <div className="col col-sm-3"></div>
                 <div className="col col-sm-6" style={{textAlign:"left"}}>
                     <ul style={{alignContent: "left", alignItems: "left", paddingLeft: "0pt", marginTop: -69}}>
-                    <h3>Why LedgerCTRL?</h3>
-                    <li>Time is money</li>
-                    <li>
-                    Building blockchain apps has historically been difficult and cumbersome. 
-                    <br />Almost as difficult as CSS.
-                    </li>
-                    <li>
-                    Running servers and managing accounts is tedious and boring.
-                    </li>
-                    <li>
-                    CTRL API does all of the boring stuff so you can build the app you want 
-                    without worrying about benign technical details.
-                    </li>
-                    <br />
-                    <div>
-                    <em>
-                        And most importantly, LedgerCTRL saves a lot of time.
-                    </em>
-                    </div>
-                </ul>
+                        <h3>Why LedgerCTRL?</h3>
+                        <li>Time is money</li>
+                        <li>
+                        Building blockchain apps has historically been difficult and cumbersome. 
+                        <br />Almost as difficult as CSS.
+                        </li>
+                        <li>
+                        Running servers and managing accounts is tedious and boring.
+                        </li>
+                        <li>
+                        CTRL API does all of the boring stuff so you can build the app you want 
+                        without worrying about benign technical details.
+                        </li>
+                    </ul>
                 </div>
                 </div>
                 
-                <h2 style={{ marginTop: "40px" }}>How LedgerCTRL Saves Time:</h2>
+                <h2 style={{ marginTop: "40px" }}>LedgerCTRL Saves Time</h2>
                 <div className="row">
                 <div className="col-sm">
                     <div className="card">

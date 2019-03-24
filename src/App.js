@@ -24,9 +24,7 @@ class App extends Component {
           <Navbar />
             <Switch>
             <Route exact={true} path='/' render={() => (
-              <div className="App">
-                <Home />
-              </div>
+              <Home />
             )}/>
             <Route path="*" component={NotFound} />
             </Switch>
