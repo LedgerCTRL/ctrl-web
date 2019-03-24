@@ -4,6 +4,7 @@ import { blockParams } from 'handlebars';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './pages/views/home';
+import Tutorial from './pages/views/tutorial';
 import NotFound from './pages/views/404';
 import {
   Switch,
@@ -23,10 +24,13 @@ class App extends Component {
         <BrowserRouter>
           <Navbar />
             <Switch>
-            <Route exact={true} path='/' render={() => (
-              <Home />
-            )}/>
-            <Route path="*" component={NotFound} />
+              <Route exact={true} path='/' render={() => (
+                <Home />
+              )}/>
+              <Route exact={true} path='/tutorial' render={() => (
+                <Tutorial />
+              )}/>
+              <Route path="*" component={NotFound} />
             </Switch>
           <Footer />
         </BrowserRouter>

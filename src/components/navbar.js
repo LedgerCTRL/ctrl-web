@@ -9,8 +9,8 @@ export default class Navbar extends Component {
                 <a className="navbar-brand" href="/">LedgerCTRL</a>
                 <div className="navbar-text">liberating permitivitty of free space in blockchain</div>
                 <div className="navbar-nav">
-                <a className="nav-item nav-link active" href="#">Home</a>
-                <a className="nav-item nav-link" href="#">Other</a>
+                <a className="nav-item nav-link" href="/">Home</a>
+                <a className="nav-item nav-link" href="/tutorial">Tutorial</a>
                 </div>
             </div>
         );
