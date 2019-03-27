@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Home from './pages/views/home';
 import Tutorial from './pages/views/tutorial';
 import NotFound from './pages/views/404';
+import Values from './pages/views/values';
 import {
   Switch,
   BrowserRouter,
@@ -29,6 +30,9 @@ class App extends Component {
               )}/>
               <Route exact={true} path='/tutorial' render={() => (
                 <Tutorial />
+              )}/>
+              <Route exact={true} path='/values' render={() => (
+                <Values />
               )}/>
               <Route path="*" component={NotFound} />
             </Switch>

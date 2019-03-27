@@ -11,6 +11,7 @@ export default class Navbar extends Component {
                 <div className="navbar-nav">
                 <a className="nav-item nav-link" href="/">Home</a>
                 <a className="nav-item nav-link" href="/tutorial">Tutorial</a>
+                <a className="nav-item nav-link" href="/values">Mission</a>
                 </div>
             </div>
         );
