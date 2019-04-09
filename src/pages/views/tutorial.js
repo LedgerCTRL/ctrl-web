@@ -41,9 +41,10 @@ export default class Tutorial extends Component {
                     <div className="col-sm-3"></div>
                     <div className="col-sm-5">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/pWf97qXRXzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className="center">Our software is not yet complete... Please help us build it! 
+                        Contact our lead developer, Brock: <a href="mailto:brock@ledgerctrl.com">brock@ledgerctrl.com</a></div>
                     </div>
                 </div>
-                <h6>Our software is not yet complete... Please help us build it! Contact Brock, our CTO, at <a href="mailto:brock@ledgerctrl.com">brock@ledgerctrl.com</a></h6>
             </div>
         )
     }

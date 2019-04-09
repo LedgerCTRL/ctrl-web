@@ -38,7 +38,7 @@ We believe that anything can be accomplished with the proper research, resources
 Exploration, Cross-Training
 </h5>
 <p>
-Jack of All Trades, Master of None…? We don’t entirely buy that. Having a diverse skillset translates to having more to offer in unfamiliar situations, not to mention that overtraining can lead to stagnant performance. Having experience and/or knowledge in a field unrelated to your primary work can lead to unique and innovative ideas.
+Having a diverse skillset translates to having more to offer in unfamiliar situations, not to mention that overtraining can lead to stagnant performance. Having experience and/or knowledge in a field unrelated to your primary work often yields unique and innovative ideas.
 </p>
 
 <h5>
