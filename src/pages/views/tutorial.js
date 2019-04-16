@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import GetStarted from '../../components/getstarted';
 
 const logo = "/img/logo.png"
 const cardImgStyle = {
@@ -16,7 +17,11 @@ export default class Tutorial extends Component {
         return (
             <div className="container" style={{textAlign: "left"}}>
                 <h1>How to blockchain with LedgerCTRL</h1>
-                <span>This page will give you the rundown on how to build a blockchain-enabled app with LedgerCTRL.</span>
+                <strong>This page will give you the rundown on how to build a blockchain-enabled app with LedgerCTRL.</strong>
+
+                <p>To run the LedgerCTRL API locally:</p>
+                <GetStarted style={{marginTop: 60, marginBottom: 40}}/>
+
                 <Steps>
                     <Step num={1}>
                         {[

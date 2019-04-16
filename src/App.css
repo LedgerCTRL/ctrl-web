@@ -7,7 +7,7 @@
   height: 16vmin;
   pointer-events: none;
   position: fixed;
-  margin-bottom: 60px;
+  margin-top: -240px;
 }
 
 .App-header {
