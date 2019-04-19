@@ -114,7 +114,7 @@ export default class Home extends Component {
                     <div className="col-sm">
                         <div className="card">
                             <div className="center">
-                                <img src="/img/feature.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                                <img src="/img/shop.svg" style={cardImgStyle} className="card-img-top" alt="..." />
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title">Build a Marketplace</h5>
@@ -127,7 +127,7 @@ export default class Home extends Component {
                     <div className="col-sm">
                         <div className="card">
                             <div className="center">
-                                <img src="/img/happy.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                                <img src="/img/team.svg" style={cardImgStyle} className="card-img-top" alt="..." />
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title">Run a Decentralized Organization (DAO)</h5>
@@ -140,7 +140,7 @@ export default class Home extends Component {
                     <div className="col-sm">
                         <div className="card">
                             <div className="center">
-                                <img src="/img/fingerprint.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                                <img src="/img/identification.svg" style={cardImgStyle} className="card-img-top" alt="..." />
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title">Manage Unique Items (NFTs)</h5>
