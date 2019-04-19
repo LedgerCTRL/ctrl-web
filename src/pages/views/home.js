@@ -72,45 +72,87 @@ export default class Home extends Component {
                 </div>
                 </div>
                 
-                <h2 style={{ marginTop: "40px" }}>LedgerCTRL Saves Time</h2>
+                <h2 style={{ marginTop: "40px" }}>Save Time</h2>
                 <div className="row">
-                <div className="col-sm">
-                    <div className="card">
-                    <div className="center">
-                        <img src="/img/feature.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                    <div className="col-sm">
+                        <div className="card">
+                            <div className="center">
+                                <img src="/img/feature.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Smart Contracts On Deck</h5>
+                                <p className="card-text" >We have a library of ready-to-go smart contracts that make use of the most widely ued tasks in blockchain.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="card-body">
-                        <h5 className="card-title">Smart Contracts On Deck</h5>
-                        <p className="card-text" >We have a library of ready-to-go smart contracts that make use of the most widely ued tasks in blockchain.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    <div className="col-sm">
+                        <div className="card">
+                            <div className="center">
+                                <img src="/img/happy.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Refreshingly Familiar</h5>
+                                <p className="card-text" >Interact with your data using CRUD: Create, Read, Update, and Delete. Simple enough for prototypes, strong enough for production.</p>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-                <div className="col-sm">
-                    <div className="card">
-                    <div className="center">
-                        <img src="/img/happy.svg" style={cardImgStyle} className="card-img-top" alt="..." />
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-title">Refreshingly Familiar</h5>
-                        < p className="card-text" >Interact with your data using CRUD: Create, Read, Update, and Delete. Simple enough for prototypes, strong enough for production.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
-                    </div>
-                </div>
-                <div className="col-sm">
-                    <div className="card">
-                    <div className="center">
-                        <img src="/img/fingerprint.svg" style={cardImgStyle} className="card-img-top" alt="..." />
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-title">Turnkey Account Management</h5>
-                        <p className="card-text" >Managing users yourself sucks. Leverage native account management to hit the ground running.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
+                    <div className="col-sm">
+                        <div className="card">
+                            <div className="center">
+                                <img src="/img/fingerprint.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Turnkey Account Management</h5>
+                                <p className="card-text" >Managing users yourself sucks. Leverage native account management to hit the ground running.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                <h2 style={{ marginTop: "40px" }}>Be Versatile</h2>
+                <div className="row">
+                    <div className="col-sm">
+                        <div className="card">
+                            <div className="center">
+                                <img src="/img/feature.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Build a Marketplace</h5>
+                                <p className="card-text">
+                                    Leverage blockchain to create a free marketplace in which governing bodies have no say.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="card">
+                            <div className="center">
+                                <img src="/img/happy.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Run a Decentralized Organization (DAO)</h5>
+                                <p className="card-text">
+                                    With a DAO, decision-making is instantly globalized. An organization that runs on blockchain runs everywhere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="card">
+                            <div className="center">
+                                <img src="/img/fingerprint.svg" style={cardImgStyle} className="card-img-top" alt="..." />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">Manage Unique Items (NFTs)</h5>
+                                <p className="card-text">
+                                    Data on the blockchain never goes away. Keep your users' precious data somewhere safe and secure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                
                 <div className="row">
                     <div className="col-sm" style={impactStyle}>
                         <h3>Client Libraries</h3>
@@ -118,6 +160,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="row">
+                <div className="col-sm"></div>
                 <div className="col-sm card">
                     <div className="center">
                     <svg viewBox="0 0 128 128">
@@ -148,8 +191,10 @@ export default class Home extends Component {
                     </div>
                     C#
                 </div>
+                <div className="col-sm"></div>
                 </div>
                 <div className="row">
+                <div className="col-sm"></div>
                 <div className="col-sm card">
                     <div className="center">
                         <svg viewBox="0 0 128 128">
@@ -180,6 +225,7 @@ export default class Home extends Component {
                     </div>
                     REST
                 </div>
+                <div className="col-sm"></div>
                 </div>
                 <div className="row">
                 <div className="col-sm" style={impactStyle}>
@@ -194,7 +240,7 @@ export default class Home extends Component {
                 </h3>
                 <div className="row" style={{marginTop: 40}}>
                 <div className="col-sm-3"></div>
-                <div className = "col-sm-6" > We need help. If you 'd like to contribute, email us: <a href="mailto:brock@ledgerctrl.com">brock@ledgerctrl.com</a></div>
+                <div className = "col-sm-6" > We need help. If you'd like to contribute, email us: <a href="mailto:brock@ledgerctrl.com">brock@ledgerctrl.com</a></div>
                 </div>
             </div>
             </div>
