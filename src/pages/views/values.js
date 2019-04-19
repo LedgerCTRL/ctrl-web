@@ -16,16 +16,20 @@ const impactStyle = {
 export default class Values extends Component {
     render(){
         return (
-            <div className="container" style={{width: "50%"}}>
-                <h3>Mission Statement</h3>
+            <div className="container" style={{width: 680}}>
+                <h3>The One-And-a-Half Liner.</h3>
+                <p>
+                    LedgerCTRL cuts development times down drastically, allowing developers with zero blockchain knowledge to build blockchain-based apps.
+                </p>
+                <h3 style={{marginTop: 42, marginBottom: 21}}>Mission Statement</h3>
 LedgerCTRL was founded with the goal of building and sharing tools that enable developers and technological professionals alike to utilize complex technologies in a straightforward way. We strive to provide systems which operate according to a strict standard of quality, integrity, performance, and most prominently, ease of use.
 
 LedgerCTRL designs systems that are robust enough for production use, but still simple enough for off-hand developments. We believe that by designing a base layer of software which is peer-reviewed and auditable, we provide a stable, trustworthy infrastructure on which truly innovative technology and business can be built.
 
-<h4 style={{marginTop: 42, marginBottom: 21}}>Values</h4>
+<h3 style={{marginTop: 42, marginBottom: 21}}>Team Values</h3>
 <h5>Learning</h5>
 <p>
-Aim to learn every day and give due consideration to alternative trains of thought. Learning is most essential in our tech-driven world which changes so quickly. LedgerCTRL values education and experience very highly because we cannot truly solve problems until we find the solutions for ourselves.
+Aim to learn every day and give due consideration to alternative trains of thought. Learning is most essential in our tech-driven world which changes so quickly. LedgerCTRL values education and experience very highly because we cannot truly solve problems until we find a solution for ourselves.
 </p>
 
 <h5>
