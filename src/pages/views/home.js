@@ -59,13 +59,13 @@ export default class Home extends Component {
                         <li>Time is money.</li>
                         <li>
                         Building blockchain apps has historically been difficult and cumbersome. 
-                        <br />Almost as difficult as CSS.
+                        <br />Kinda like CSS.
                         </li>
                         <li>
                         Running servers and managing accounts is tedious and boring.
                         </li>
                         <li>
-                        CTRL API does all of the boring stuff so you can build the app you want 
+                        CTRL API handles all the blockchain stuff, so you can build the next killer app 
                         without worrying about benign technical details.
                         </li>
                     </ul>

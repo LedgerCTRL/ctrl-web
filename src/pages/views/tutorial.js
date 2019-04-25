@@ -23,22 +23,46 @@ export default class Tutorial extends Component {
                 <GetStarted style={{marginTop: 60, marginBottom: 40}}/>
 
                 <Steps>
+                    <Step num={0}>
+                        {[
+                            "Get your API keys",
+                            "POST /v2/apiUser {\"email\": \"test@email.com\"}"
+                        ]}
+                    </Step>
+                    <Step num={0.1}>
+                        {[
+                            "Set your appId header",
+                            "appId:bf8AtT_JByFM-f52uSrx7RTuQ6t88R1xMOq6ShWz1Zg",
+                        ]}
+                    </Step>
+                    <Step num={0.2}>
+                        {[
+                            "Set your key header",
+                            "key: VGivT5IYpQtnIOZnml38rmUBvX3IXZLPmYbqUGt7NQk0a6S3TkzMgP2o9KThlRNk_gHBdo9SJz2KKULqBbMG_A",
+                        ]}
+                    </Step>
+                    <Step num={0.3}>
+                        {[
+                            "Set content type: JSON",
+                            "Content - Type: application / json",
+                        ]}
+                    </Step>
                     <Step num={1}>
                         {[
                             "Deploy an Itembase contract",
-                            "POST /itembase"
+                            "POST /v2/itembase"
                         ]}
                     </Step>
                     <Step num={2}>
                         {[
                             "Create an item",
-                            "POST /item"
+                            "POST /v2/inventory"
                         ]}
                     </Step>
                     <Step num={3}>
                         {[
                             "Check out your data",
-                            "GET /item"
+                            "GET /v2/inventory/QmWUxnWDKAKZrh6wUJ1JcAsxH2oLMJzSS8fjQrexydUcEb"
                         ]}
                     </Step>
                 </Steps>
@@ -88,7 +112,9 @@ class Step extends Component {
                 </td>
                 <td>
                     <code>
-                        $ {this.props.children[1]}
+                        {
+                            this.props.children[1]
+                        }
                     </code>
                 </td>
             </tr>

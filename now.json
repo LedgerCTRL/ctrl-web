@@ -27,6 +27,46 @@
             "dest": "/img/logo.png"
         },
         {
+            "src": "/img/admin.svg",
+            "dest": "/img/admin.svg"
+        },
+        {
+            "src": "/img/browser.svg",
+            "dest": "/img/browser.svg"
+        },
+        {
+            "src": "/img/code.svg",
+            "dest": "/img/code.svg"
+        },
+        {
+            "src": "/img/email.svg",
+            "dest": "/img/email.svg"
+        },
+        {
+            "src": "/img/feature.svg",
+            "dest": "/img/feature.svg"
+        },
+        {
+            "src": "/img/fingerprint.svg",
+            "dest": "/img/fingerprint.svg"
+        },
+        {
+            "src": "/img/happy.svg",
+            "dest": "/img/happy.svg"
+        },
+        {
+            "src": "/img/identification.svg",
+            "dest": "/img/identification.svg"
+        },
+        {
+            "src": "/img/shop.svg",
+            "dest": "/img/shop.svg"
+        },
+        {
+            "src": "/img/team.svg",
+            "dest": "/img/team.svg"
+        },
+        {
             "src": "/asset-manifest.json",
             "dest": "/asset-manifest.json"
         },
