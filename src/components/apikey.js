@@ -38,7 +38,7 @@ export default class ApiKey extends Component{
     render() {
         return (
             <div>
-                <label forHtml="email">Enter email to get an API key.</label><br />
+                <label forHtml="email">Enter email to get an API key from our live server.</label><br />
                 <input name="email" type="email" id="email" placeholder="email" onChange={this.onChange}></input>
                 <button className="btn" onClick={this.onClick}>Request API key</button>
                 <p>key: <code>{this.state.key}</code></p>

@@ -41,7 +41,7 @@ export default class Tutorial extends Component {
                 <h1>How to blockchain with LedgerCTRL</h1>
                 <strong>This page will give you the rundown on how to build a blockchain-enabled app with LedgerCTRL.</strong>
 
-                <p>To run the LedgerCTRL API locally:</p>
+                <p>To run the LedgerCTRL API locally (optional; for api devs):</p>
                 <GetStarted style={{marginTop: 60, marginBottom: 40}}/>
 
                 <ApiKey url={url} onChangeProp={this.onChange}></ApiKey>
@@ -58,20 +58,8 @@ export default class Tutorial extends Component {
                     </Step>
                     <Step num={0.1}>
                         {[
-                            "Set your appId header",
-                            `appId: ${this.state.appId}`,
-                        ]}
-                    </Step>
-                    <Step num={0.2}>
-                        {[
-                            "Set your key header",
-                            `key: ${this.state.key}`,
-                        ]}
-                    </Step>
-                    <Step num={0.3}>
-                        {[
-                            "Set content-type header",
-                            "Content-Type: application/json",
+                            "Get a file ready to upload",
+                            `curl -o image.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/SIPI_Jelly_Beans_4.1.07.tiff/lossy-page1-256px-SIPI_Jelly_Beans_4.1.07.tiff.jpg`
                         ]}
                     </Step>
                     <Step num={1}>
@@ -83,7 +71,7 @@ export default class Tutorial extends Component {
                             -H 'multipart/form-data' \
                             -F 'inventoryItem={"name": "test", "value": 42, "customer": {"id": 0}}' \
                             -F 'userIndex=1' \
-                            -F 'upfile=@image.png' \
+                            -F 'upfile=@image.jpg' \
                             ${url}/v2/inventory`
                         ]}
                     </Step>
@@ -120,7 +108,7 @@ class Steps extends Component {
                     <tr>
                         <th scope="col" style={{width: "6.9%"}}>Step</th>
                         <th scope="col">Details</th>
-                        <th scope="col">Code</th>
+                        <th scope="col">$</th>
                     </tr>
                 </thead>
                 <tbody>
