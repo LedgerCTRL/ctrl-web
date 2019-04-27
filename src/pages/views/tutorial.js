@@ -11,6 +11,19 @@ const impactStyle = {
     marginTop: "60px",
     marginBottom: "60px"
 }
+let DEV = true;
+var appId, key, url;
+
+if (DEV){
+    appId = "UxWAPM8PNjxUTkgbaxthC3m8qCGmF-_sAG-hbZU0YZE";
+    key = "7m0HetRXpoR4V2mzzyOLD-sTGAju4EkAnJIN3fiPMXF37lA_hsez-S4SbnFKcu4d_-MnLwyLxtKS995jBJfjVA";
+    url = "localhost:8088";
+}
+else {
+    appId = "Gye3CErSpXtpejvtXJlsGg5YwR3MlVbK2SY09kZtHMc";
+    key = "TMZ2V2YH7_GY5ttYAmXROt05EGSqMptAOpUKoIh4q0dV1je0FsgoBXxl9-Kc_bfhJpBGVqw2dArSwsv1vsE-Ig";
+    url = "https://ctrl.vaasd.com:5377";
+}
 
 export default class Tutorial extends Component {
     render() {
@@ -26,43 +39,49 @@ export default class Tutorial extends Component {
                     <Step num={0}>
                         {[
                             "Get your API keys",
-                            "POST /v2/apiUser {\"email\": \"test@email.com\"}"
+                            `curl \
+                            -H 'Content-Type: application/json' \
+                             -d '{\"email\": \"test@email.com\"}' \
+                             ${url}/v2/apiUser`
                         ]}
                     </Step>
                     <Step num={0.1}>
                         {[
                             "Set your appId header",
-                            "appId:bf8AtT_JByFM-f52uSrx7RTuQ6t88R1xMOq6ShWz1Zg",
+                            `appId: ${appId}`,
                         ]}
                     </Step>
                     <Step num={0.2}>
                         {[
                             "Set your key header",
-                            "key: VGivT5IYpQtnIOZnml38rmUBvX3IXZLPmYbqUGt7NQk0a6S3TkzMgP2o9KThlRNk_gHBdo9SJz2KKULqBbMG_A",
+                            `key: ${key}`,
                         ]}
                     </Step>
                     <Step num={0.3}>
                         {[
-                            "Set content type: JSON",
-                            "Content - Type: application / json",
+                            "Set content-type header",
+                            "Content-Type: application/json",
                         ]}
                     </Step>
                     <Step num={1}>
                         {[
-                            "Deploy an Itembase contract",
-                            "POST /v2/itembase"
+                            "Create an item (sorry, formdata only right now...)",
+                            `curl -X POST \
+                            -H 'appId: ${appId}' \
+                            -H 'key: ${key}' \
+                            -H 'multipart/form-data' \
+                            -F 'inventoryItem={"name": "test", "value": 42, "customer": {"id": 0}}' \
+                            -F 'userIndex=120' \
+                            -F 'upfile=@image.png' \
+                            ${url}/v2/inventory`
                         ]}
                     </Step>
                     <Step num={2}>
                         {[
-                            "Create an item",
-                            "POST /v2/inventory"
-                        ]}
-                    </Step>
-                    <Step num={3}>
-                        {[
                             "Check out your data",
-                            "GET /v2/inventory/QmWUxnWDKAKZrh6wUJ1JcAsxH2oLMJzSS8fjQrexydUcEb"
+                            `curl -H \"appId: ${appId}\" \
+                            -H \"key: ${key}\" \
+                             ${url}/v2/inventory/{itemHash}`
                         ]}
                     </Step>
                 </Steps>
