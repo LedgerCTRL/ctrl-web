@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import GetStarted from '../../components/getstarted';
+import ApiKey from '../../components/apikey';
 
 const logo = "/img/logo.png"
 const cardImgStyle = {
@@ -11,21 +12,29 @@ const impactStyle = {
     marginTop: "60px",
     marginBottom: "60px"
 }
-let DEV = true;
+let DEV = false;
 var appId, key, url;
 
 if (DEV){
-    appId = "UxWAPM8PNjxUTkgbaxthC3m8qCGmF-_sAG-hbZU0YZE";
-    key = "7m0HetRXpoR4V2mzzyOLD-sTGAju4EkAnJIN3fiPMXF37lA_hsez-S4SbnFKcu4d_-MnLwyLxtKS995jBJfjVA";
     url = "localhost:8088";
 }
 else {
-    appId = "Gye3CErSpXtpejvtXJlsGg5YwR3MlVbK2SY09kZtHMc";
-    key = "TMZ2V2YH7_GY5ttYAmXROt05EGSqMptAOpUKoIh4q0dV1je0FsgoBXxl9-Kc_bfhJpBGVqw2dArSwsv1vsE-Ig";
     url = "https://ctrl.vaasd.com:5377";
 }
 
 export default class Tutorial extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            key: "",
+            appId: "",
+            email: "test@email.com",
+        };
+        this.onChange = this.onChange.bind(this);
+    }
+    onChange(payload){
+        this.setState(payload);
+    }
     render() {
         return (
             <div className="container" style={{textAlign: "left"}}>
@@ -35,26 +44,28 @@ export default class Tutorial extends Component {
                 <p>To run the LedgerCTRL API locally:</p>
                 <GetStarted style={{marginTop: 60, marginBottom: 40}}/>
 
+                <ApiKey url={url} onChangeProp={this.onChange}></ApiKey>
+
                 <Steps>
                     <Step num={0}>
                         {[
                             "Get your API keys",
                             `curl \
                             -H 'Content-Type: application/json' \
-                             -d '{\"email\": \"test@email.com\"}' \
+                             -d '{\"email\": \"${this.state.email}\"}' \
                              ${url}/v2/apiUser`
                         ]}
                     </Step>
                     <Step num={0.1}>
                         {[
                             "Set your appId header",
-                            `appId: ${appId}`,
+                            `appId: ${this.state.appId}`,
                         ]}
                     </Step>
                     <Step num={0.2}>
                         {[
                             "Set your key header",
-                            `key: ${key}`,
+                            `key: ${this.state.key}`,
                         ]}
                     </Step>
                     <Step num={0.3}>
@@ -67,8 +78,8 @@ export default class Tutorial extends Component {
                         {[
                             "Create an item (sorry, formdata only right now...)",
                             `curl -X POST \
-                            -H 'appId: ${appId}' \
-                            -H 'key: ${key}' \
+                            -H 'appId: ${this.state.appId}'\
+                            -H 'key: ${this.state.key}'\
                             -H 'multipart/form-data' \
                             -F 'inventoryItem={"name": "test", "value": 42, "customer": {"id": 0}}' \
                             -F 'userIndex=120' \
@@ -79,8 +90,8 @@ export default class Tutorial extends Component {
                     <Step num={2}>
                         {[
                             "Check out your data",
-                            `curl -H \"appId: ${appId}\" \
-                            -H \"key: ${key}\" \
+                            `curl -H \"appId: ${this.state.appId}\" \
+                            -H\ "key: ${this.state.key}\" \
                              ${url}/v2/inventory/{itemHash}`
                         ]}
                     </Step>
