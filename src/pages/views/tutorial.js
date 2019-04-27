@@ -16,7 +16,7 @@ let DEV = false;
 var appId, key, url;
 
 if (DEV){
-    url = "localhost:8088";
+    url = "http://localhost:8088";
 }
 else {
     url = "https://ctrl.vaasd.com:5377";
@@ -82,7 +82,7 @@ export default class Tutorial extends Component {
                             -H 'key: ${this.state.key}'\
                             -H 'multipart/form-data' \
                             -F 'inventoryItem={"name": "test", "value": 42, "customer": {"id": 0}}' \
-                            -F 'userIndex=120' \
+                            -F 'userIndex=1' \
                             -F 'upfile=@image.png' \
                             ${url}/v2/inventory`
                         ]}
